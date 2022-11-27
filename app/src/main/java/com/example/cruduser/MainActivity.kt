@@ -1,11 +1,16 @@
-    package com.example.cruduser
+package com.example.cruduser
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cruduser.databinding.ActivityMainBinding
+import com.example.cruduser.utils.BaseAppCompactActivity
+import kotlinx.coroutines.channels.ActorScope
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseAppCompactActivity() {
+    private lateinit var mainBinding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        mainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(mainBinding.root)
     }
 }

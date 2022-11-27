@@ -5,6 +5,8 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="please_sign_up_to_create_account">Don\'t have account?</string>
+    <string name="sign_up">Sign Up</string>
     <string name="toolbar">Toolbar</string>
     <string name="user">User</string>
     <string name="dep">DEP</string>
