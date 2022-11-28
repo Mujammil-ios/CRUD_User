@@ -12,5 +12,11 @@ class MainActivity : BaseAppCompactActivity() {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
+        initView()
+    }
+
+    private fun initView() {
+        supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        supportActionBar!!.title = "Your Account"
     }
 }

@@ -17,7 +17,7 @@
         android:gravity="center"
         android:hint="@string/first_name">
 
-        <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/firstName_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -116,31 +116,13 @@
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/signUpBtn_btn"
+        android:layout_width="@dimen/_180sdp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/deleate_btn"
-            android:layout_width="@dimen/_130sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:padding="@dimen/_10sdp"
-            android:text="@string/delete"
-            android:textSize="@dimen/_12ssp" />
-
-        <Button
-            android:id="@+id/update_btn"
-            android:layout_width="@dimen/_130sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:padding="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_25sdp"
-            android:text="@string/update"
-            android:textSize="@dimen/_12ssp" />
-
-    </LinearLayout>
-
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/sign_up"
+        android:textSize="@dimen/_12ssp" />
 
 </LinearLayout>

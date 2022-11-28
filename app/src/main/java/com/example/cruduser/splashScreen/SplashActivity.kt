@@ -9,6 +9,7 @@ import android.util.Log
 import com.example.cruduser.MainActivity
 import com.example.cruduser.databinding.ActivitySplashBinding
 import com.example.cruduser.login.LoginActivity
+import com.example.cruduser.userMVP.RegisterActivity
 import com.example.cruduser.utils.AppPreference
 import com.example.cruduser.utils.BaseAppCompactActivity
 import com.example.cruduser.utils.Constant.Companion.SPLASH_SCREEN_ACTIVITY
@@ -39,7 +40,7 @@ class SplashActivity : BaseAppCompactActivity() {
     //                    intent.putExtra(getString(R.string.isFromDEP_intent_key),false)
                         startActivity(intent)
                 } else {
-                    val intent = Intent(this, LoginActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                 }
